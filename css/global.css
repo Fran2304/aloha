@@ -47,26 +47,6 @@
     border-color: rgb(241, 140, 33);
 }
 
-.card-img-top {
-    height: 400px;
-    object-fit: cover;
-}
-
-#nosotros {
-    background-color:#0E4C6F;
-}
-
-#nosotros h2,
-#nosotros h3,
-#nosotros p {
-    color: #F8F9FA;
-}
-
-#nosotros i {
-    color: #1A8397;
-}
-
-
 
 footer {
     background-color:#F8F9FA;
