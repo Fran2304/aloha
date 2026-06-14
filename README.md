@@ -8,7 +8,7 @@ Proyecto web con HTML, Bootstrap 5 y CSS.
 projecto/
 ├── index.html
 ├── css/
-│   └── styles.css
+│   └── global.css
 └── images/
 ```
 
