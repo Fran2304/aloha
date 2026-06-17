@@ -4,9 +4,14 @@ async function loadProperties() {
   return properties;
 }
 
-async function displayProperties() {
-  const properties = await loadProperties();
+let allProperties = [];
 
+
+function renderProperties(properties) {
+  if (!properties || properties.length === 0) {
+    document.getElementById("properties-grid").innerHTML = "<p>No se encontraron propiedades.</p>";
+    return;
+  }
   const grid = document.getElementById("properties-grid");
 
   grid.innerHTML = properties.map((p) => `
@@ -32,5 +37,29 @@ async function displayProperties() {
     </div>
   `).join("");
 }
+
+async function displayProperties(){
+  allProperties = await loadProperties();
+  renderProperties(allProperties);
+}
+
+ document.querySelector(".search-bar form").addEventListener("submit", (e) => {                                                                                          
+     e.preventDefault();
+     const ubicacion = document.getElementById("ubicacion").value.trim().toLowerCase();
+     const precioMax = parseFloat(document.getElementById("precioMax").value);
+     const tipo      = document.getElementById("tipoAlojam").value;
+     const huespedes = parseInt(document.getElementById("huespedes").value) || 0;                                                                                          
+  
+     const filtered = allProperties.filter((p) => {
+       const matchLocation = !ubicacion || p.city.toLowerCase().includes(ubicacion) || p.region.toLowerCase().includes(ubicacion);                                         
+       const matchPrice    = !precioMax || p.price <= precioMax;
+       const matchType     = !tipo || tipo === 'todos' || p.type === tipo;
+       const matchGuests   = !huespedes || p.guests >= huespedes;
+
+       return matchLocation && matchPrice && matchType && matchGuests;
+     });
+
+    renderProperties(filtered);
+});
 
 displayProperties();
