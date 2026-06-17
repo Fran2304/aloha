@@ -39,16 +39,19 @@
                             <h1 class="text-center">Iniciar Sesión</h1>
                             <p class="text-center">Bienvenido de vuelta a AlohaPe. Ingresa tus datos para continuar.</p>
 
-                            <form action="#">
+                            <form id="loginForm" action="#" novalidate>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email" placeholder="tucorreo@gmail.com">
+                                    <div class="invalid-feedback">Ingresa un correo válido.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="contrasena" class="form-label">Contraseña</label>
                                     <input type="password" class="form-control" id="contrasena" placeholder="••••••••">
+                                    <div class="invalid-feedback">La contraseña no puede estar vacía.</div>
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                                <p id="loginError" class="text-danger mt-2 d-none">Correo o contraseña incorrectos.</p>
                             </form>
                         </div>
                     </div>
@@ -87,5 +90,6 @@
         </div>
     </footer>
 
+    <script src="../js/inicio-sesion.js"></script>
 </body>
 </html>

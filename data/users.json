@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "email": "juan.perez@gmail.com",
+        "contrasena": "desarrolloWeb2026",
+        "dni": "74588922",
+        "telefono": "999999999",
+        "propiedades": [1, 4]
+    },
+    {
+        "id": 2,
+        "nombre": "María López",
+        "email": "maria.lopez@gmail.com",
+        "contrasena": "password123",
+        "dni": "72845123",
+        "telefono": "988123456",
+        "propiedades": [2, 5]
+    },
+    {
+        "id": 3,
+        "nombre": "Carlos Ramírez",
+        "email": "carlos.ramirez@gmail.com",
+        "contrasena": "password123",    
+        "dni": "71234567",
+        "telefono": "977654321",
+        "propiedades": [3]
+    },
+    {
+        "id": 4,
+        "nombre": "Ana Torres",
+        "email": "ana.torres@gmail.com",
+        "contrasena": "password123",
+        "dni": "73456789",
+        "telefono": "966789123",
+        "propiedades": [6]
+    }
+]
