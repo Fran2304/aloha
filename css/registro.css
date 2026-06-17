@@ -1,0 +1,96 @@
+/* Estilos para página de Registro - Colores del Wireframe */
+
+/* Paleta de colores del wireframe */
+:root {
+    --azul-marino: #003d5c;      /* Azul oscuro del wireframe */
+    --azul-claro: #5b7c99;       /* Azul claro de navegación */
+    --naranja: #F18C21;          /* Naranja del botón */
+    --gris-fondo: #f5f5f5;       /* Fondo gris claro */
+}
+
+/* Página de registro con fondo gris */
+.registro-page {
+    background-color: var(--gris-fondo);
+}
+
+/* Card con bordes redondeados */
+.card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título "Crear Cuenta" en azul marino */
+.card-body h1 {
+    color: var(--azul-marino);
+    font-weight: 700;
+}
+
+/* Subtítulo en azul claro */
+.card-body > p {
+    color: var(--azul-claro);
+}
+
+/* Labels del formulario en azul marino */
+.form-label {
+    color: var(--azul-marino);
+    font-weight: 600;
+}
+
+/* Inputs con bordes redondeados y fondo igual al de la página */
+.form-control {
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background-color: var(--gris-fondo);
+}
+
+.form-control:focus {
+    border-color: var(--azul-marino);
+    box-shadow: 0 0 0 0.2rem rgba(0, 61, 92, 0.25);
+    background-color: var(--gris-fondo);
+}
+
+/* Icono circular azul en el header junto a Registro */
+.header-register-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--azul-marino);
+    display: grid;
+    place-items: center;
+    border: 3px solid #ffffff;
+}
+
+.header-register-icon__icon {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+/* Botón Registrarse del formulario en azul con texto blanco */
+#registroForm .btn-primary {
+    background-color: var(--azul-marino);
+    border-color: var(--azul-marino);
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+#registroForm .btn-primary:hover {
+    background-color: #002a42;
+    border-color: #002a42;
+    color: #ffffff;
+}
+
+/* Links en azul claro */
+a {
+    color: var(--azul-claro);
+}
+
+a:hover {
+    color: var(--azul-marino);
+}
+
+/* Links de navegación en azul marino */
+.navbar-nav .nav-link {
+    color: var(--azul-marino) !important;
+}

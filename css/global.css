@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.btn-primary {
+    background-color: rgb(241, 140, 33);
+    border-color: rgb(241, 140, 33);
+}
+
+
+footer {
+    background-color:#F8F9FA;
+    padding-top: 40px;
+}
+
+footer img {
+    height: 40px;
+}

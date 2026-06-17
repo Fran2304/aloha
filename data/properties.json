@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Refugio frente al mar",
+    "image": "images/property-1.png",
+    "rating": 4.8,
+    "city": "Máncora",
+    "region": "Piura",
+    "guests": 4,
+    "rooms": 2,
+    "price": 200,
+    "type": "casa"
+  },
+  {
+    "id": 2,
+    "title": "Cabaña nativa acogedora",
+    "image": "images/property-2.jpg",
+    "rating": 4.6,
+    "city": "Tarapoto",
+    "region": "San Martín",
+    "guests": 3,
+    "rooms": 1,
+    "price": 260,
+    "type": "cabana"
+  },
+  {
+    "id": 3,
+    "title": "Loft minimalista urbano",
+    "image": "images/property-3.png",
+    "rating": 4.9,
+    "city": "Miraflores",
+    "region": "Lima",
+    "guests": 2,
+    "rooms": 1,
+    "price": 390,
+    "type": "departamento"
+  },
+  {
+    "id": 4,
+    "title": "Bungalow tropical",
+    "image": "images/property-4.png",
+    "rating": 4.7,
+    "city": "Iquitos",
+    "region": "Loreto",
+    "guests": 5,
+    "rooms": 2,
+    "price": 180,
+    "type": "casa"
+  },
+  {
+    "id": 5,
+    "title": "Casona de adobe",
+    "image": "images/property-5.png",
+    "rating": 4.5,
+    "city": "Arequipa",
+    "region": "Arequipa",
+    "guests": 6,
+    "rooms": 3,
+    "price": 300,
+    "type": "casa"
+  },
+  {
+    "id": 6,
+    "title": "Cabaña entre los maíz",
+    "image": "images/property-6.png",
+    "rating": 4.6,
+    "city": "Urubamba",
+    "region": "Cusco",
+    "guests": 4,
+    "rooms": 2,
+    "price": 270,
+    "type": "cabana"
+  }
+]
