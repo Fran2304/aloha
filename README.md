@@ -8,7 +8,7 @@ Proyecto web con HTML, Bootstrap 5 y CSS.
 projecto/
 ├── index.html
 ├── css/
-│   └── styles.css
+│   └── global.css
 └── images/
 ```
 
@@ -26,6 +26,7 @@ projecto/
 ![Detalles](wireframes/baja/2-detalle.jpg)
 ![Registro](wireframes/baja/3-registro.jpg)
 ![Inicio Sesión](wireframes/baja/4-inicio-sesion.jpg)
+![Mis reservas](wireframes/baja/5-mis-reservas.jpg)
 
 
 #### Alta

@@ -1,0 +1,64 @@
+.hero-image {
+    height: 600px;
+    object-fit: cover;
+}
+
+.hero-header {
+    position: relative;
+     color: #fff;
+}
+
+.hero-header h1{
+   font-size: 60px;
+   font-weight: bold;
+}
+
+
+.hero-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+}
+
+.hero-header .position-absolute {
+    z-index: 1;
+    color: #fff;
+}
+
+.search-bar {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.08);
+}
+
+#nosotros {
+    background-color:#0E4C6F;
+}
+
+#nosotros h2,
+#nosotros h3,
+#nosotros p {
+    color: #F8F9FA;
+}
+
+#nosotros i {
+    color: #1A8397;
+}

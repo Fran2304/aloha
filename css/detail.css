@@ -248,8 +248,19 @@ section ul li {
     margin-bottom: 4px;
 }
 
-.c  font-size: 18px;
-    font-weight: 700;
+.card-body .form-control,
+.card-body .form-select {
+    border-radius: 8px;
+    border: 1px solid var(--color-borde);
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+.card-body .form-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-primario);
+    margin-bottom: 4px;
 }
 
 /* ─── BOTÓN WHATSAPP ─── */
@@ -371,4 +382,9 @@ footer .text-center {
     position: static;
     margin-top: 24px;
     }
+}
+
+.badge {
+    background-color: #f5f1f1e3 !important;
+    color: #000000;
 }
