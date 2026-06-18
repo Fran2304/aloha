@@ -39,40 +39,27 @@
             </nav>
 
             <div class="d-flex align-items-center gap-3">
-                <span class="badge bg-secondary">Departamento</span>
-                <span><i class="bi bi-star-fill"></i> 4.9 · 128 reseñas</span>
+                <span class="badge bg-secondary" id="det-tipo">Departamento</span>
+                <span><i class="bi bi-star-fill"></i> <span id="det-rating">4.9</span> · <span id="det-reviews">128</span> reseñas</span>
             </div>
 
-            <h1>Refugio frente al mar</h1>
-            <p>Máncora, Piura</p>
+            <h1 id="det-titulo"></h1>
+            <p id="det-ciudad"></p>
 
             <div class="row g-2">
                 <div class="col-7">
-                    <img src="../images/rooms/property-1/room-1.jpg" alt="Vista principal del departamento" class="img-fluid w-100 h-100 object-fit-cover">
+                    <img id="det-img-principal" src="" alt="" class="img-fluid w-100 h-100 object-fit-cover">
                 </div>
                 <div class="col-5">
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="../images/rooms/property-1/room-2.jpg" alt="Habitación 2" class="img-fluid w-100">
-                        </div>
-                        <div class="col-6">
-                            <img src="../images/rooms/property-1/room-3.jpg" alt="Habitación 3" class="img-fluid w-100">
-                        </div>
-                        <div class="col-6">
-                            <img src="../images/rooms/property-1/room-4.jpg" alt="Habitación 4" class="img-fluid w-100">
-                        </div>
-                        <div class="col-6">
-                            <img src="../images/rooms/property-1/room-5.jpg" alt="Habitación 5" class="img-fluid w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="row g-2" id="det-imgs-secundarias">
+    </div>
+</div>
 
             <div class="d-flex gap-3 mt-3">
-                <span>4 huéspedes</span>
-                <span>2 habitaciones</span>
-                <span>3 camas</span>
-                <span>2 baños</span>
+                <span id="det-huespedes"></span>
+                <span id="det-habitaciones"></span>
+                <span id="det-camas"></span>
+                <span id="det-banos"></span>
             </div>
 
             <div class="row mt-4">
@@ -81,25 +68,15 @@
 
                     <section>
                         <h2>Descripción</h2>
-                        <p>Despierta con el sonido de las olas en este luminoso departamento frente al mar de Máncora. Cuenta con amplios ventanales, terraza privada y acceso directo a la playa. Ideal para escapadas en pareja o en familia que buscan descanso y atardeceres inolvidables sobre el Pacífico.</p>
-                        <p>Anfitrión: <strong>Lucia</strong></p>
+                        <p id="det-descripcion"></p>
+                        <p>Anfitrión: <strong id="det-host"></strong></p>
                     </section>
 
                     <section>
                         <h2>Lo que incluye</h2>
                         <div class="row">
                             <div class="col-6">
-                                <ul class="list-unstyled">
-                                    <li>Wi-Fi de alta velocidad</li>
-                                    <li>Cocina equipada</li>
-                                    <li>Estacionamiento</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul class="list-unstyled">
-                                    <li>Vista al mar</li>
-                                    <li>Aire acondicionado</li>
-                                    <li>Terraza privada</li>
+                                <ul class="list-unstyled row"id="det-amenidades">
                                 </ul>
                             </div>
                         </div>
@@ -107,8 +84,8 @@
 
                     <section>
                         <h2>Ubicación</h2>
-                        <p>Máncora, Piura</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.624387129272!2d-77.0539028414934!3d-12.088732739921376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c854357904f7%3A0x93dd5b0ea540b6e0!2sReal%20Plaza%20Salaverry!5e0!3m2!1ses!2spe!4v1780789194066!5m2!1ses!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p id="det-ubicacion"></p>
+                        <iframe id="det-mapa" src="" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </section>
 
                 </div>
@@ -118,7 +95,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span><strong>S/ 320</strong> / noche</span>
+                                    <span><strong id="det-precio"></strong> / noche</span>
                                     <span>Precio y reserva</span>
                                 </div>
                                 <div class="row g-2 mt-2">
@@ -143,6 +120,21 @@
                                 <a href="https://wa.me/5168949631" class="btn btn-success w-100 mt-3" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-whatsapp"></i> Reservar por WhatsApp
                                 </a>
+                                <div id="resumen-precio" class="resumen-precio d-none mt-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span>S/ 320 × <span id="num-noches">0</span> noches</span>
+                                        <span id="subtotal">S/ 0</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Tarifa de servicio</span>
+                                        <span id="tarifa">S/ 0</span>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between fw-bold">
+                                        <span>Total</span>
+                                        <span id="total">S/ 0</span>
+                                    </div>
+                                </div>
                                 <p class="text-center mt-2"><small>No se te cobrará nada todavía</small></p>
                             </div>
                         </div>
@@ -182,6 +174,9 @@
             </div>
         </div>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/detail.js"></script>
 
 </body>
 </html>
