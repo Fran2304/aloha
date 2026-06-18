@@ -111,8 +111,16 @@
       "Wi-Fi",
       "Cocina equipada",
       "Jardín con flores",
-      "Estacionamiento"
+      "Estacionamiento",
+    ],
+    "images": [
+      "images/rooms/property-4/room1.png",
+      "images/rooms/property-4/room2.png",
+      "images/rooms/property-4/room3.png",
+      "images/rooms/property-4/room4.png",
+      "images/rooms/property-4/room5.png"
     ]
+
   },
 
   {
