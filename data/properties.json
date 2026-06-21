@@ -1,3 +1,4 @@
+
 [
   {
     "id": 1,
@@ -8,9 +9,29 @@
     "region": "Piura",
     "guests": 4,
     "rooms": 2,
+    "beds": 3,
+    "bathrooms": 2,
+    "reviews": 128,
     "price": 200,
-    "type": "casa"
+    "type": "casa",
+    "host": "Lucia",
+    "whatsapp": "+51987654321",
+    "description": "Despierta con el sonido de las olas en este luminoso departamento frente al mar de Máncora. Cuenta con amplios ventanales, terraza privada y acceso directo a la playa. Ideal para escapadas en pareja o en familia que buscan descanso y atardeceres inolvidables sobre el Pacífico.",
+    "amenities": ["Wi-Fi",
+      "Cocina equipada",
+      "Estacionamiento",
+      "Vista al mar",
+      "Aire acondicionado",
+      "Terraza privada"],
+    "images": [
+      "images/rooms/property-1/room-1.jpg",
+      "images/rooms/property-1/room-2.jpg",
+      "images/rooms/property-1/room-3.jpg",
+      "images/rooms/property-1/room-4.jpg",
+      "images/rooms/property-1/room-5.jpg"
+    ]
   },
+
   {
     "id": 2,
     "title": "Cabaña nativa acogedora",
@@ -20,9 +41,31 @@
     "region": "San Martín",
     "guests": 3,
     "rooms": 1,
+    "beds": 2,
+    "bathrooms": 1,
+    "reviews": 94,
     "price": 260,
-    "type": "cabana"
+    "type": "cabana",
+    "host": "Carlos",
+    "whatsapp": "+51987654321",
+    "description": "Cabaña construida con bambú y madera nativa en plena selva de Tarapoto. Iluminada por las estrellas de noche y rodeada de vegetación tropical de día. Sus habitaciones tienen camas con mosquitero, terrazas abiertas con hamacas y una sala de estar al aire libre con vista a la selva. Una experiencia única para quienes buscan desconectarse del ruido de la ciudad.",
+    "amenities": [
+      "Wi-Fi",
+      "Hamacas en terraza",
+      "Sala al aire libre",
+      "Mosquiteros",
+      "Vista a la selva",
+      "Desayuno incluido"
+    ],
+    "images": [
+      "images/rooms/property-2/room1.jpg",
+      "images/rooms/property-2/room2.jpg",
+      "images/rooms/property-2/room3.jpg",
+      "images/rooms/property-2/room4.jpg",
+      "images/rooms/property-2/room5.jpg"
+    ]
   },
+
   {
     "id": 3,
     "title": "Loft minimalista urbano",
@@ -32,9 +75,31 @@
     "region": "Lima",
     "guests": 2,
     "rooms": 1,
+    "beds": 1,
+    "bathrooms": 1,
+    "reviews": 215,
     "price": 390,
-    "type": "departamento"
+    "type": "departamento",
+    "host": "Valerya",
+    "whatsapp": "+51987654321",
+    "description": "Loft de lujo en Miraflores con piscina privada y acabados modernos. Sus habitaciones tienen ventanales amplios con vista panorámica a la ciudad. Cocina abierta totalmente equipada con estantería de diseño y sala de estar iluminada. Ideal para parejas que buscan una experiencia urbana premium en el mejor distrito de Lima",
+    "amenities": [
+      "Piscina privada",
+      "Wi-Fi ",
+      "Cocina equipada",
+      "Smart TV",
+      "Aire acondicionado",
+      "Vista panorámica"
+    ],
+    "images": [
+      "images/rooms/property-3/room1.jpg",
+      "images/rooms/property-3/room2.jpg",
+      "images/rooms/property-3/room3.jpg",
+      "images/rooms/property-3/room4.jpg",
+      "images/rooms/property-3/room5.jpg"
+    ]
   },
+
   {
     "id": 4,
     "title": "Bungalow tropical",
@@ -44,9 +109,32 @@
     "region": "Loreto",
     "guests": 5,
     "rooms": 2,
+    "beds": 3,
+    "bathrooms": 2,
+    "reviews": 76,
     "price": 180,
-    "type": "casa"
+    "type": "casa",
+    "host": "Roberto",
+    "whatsapp": "+51987654321",
+    "description": "Bungalow rodeado de naturaleza tropical con terraza privada y vistas al atardecer sobre la selva. Sus habitaciones son amplias, limpias y decoradas con plantas naturales. Despierta con el canto de los pájaros y termina el día viendo el cielo naranja desde la terraza. Una opción tranquila y auténtica para quienes quieren alejarse del ruido de la ciudad",
+    "amenities": [
+      "Terraza privada",
+      "Vista al atardecer",
+      "Wi-Fi",
+      "Cocina equipada",
+      "Jardín con flores",
+      "Estacionamiento"
+    ],
+    "images": [
+      "images/rooms/property-4/room1.png",
+      "images/rooms/property-4/room2.png",
+      "images/rooms/property-4/room3.png",
+      "images/rooms/property-4/room4.png",
+      "images/rooms/property-4/room5.png"
+    ]
+
   },
+
   {
     "id": 5,
     "title": "Casona de adobe",
@@ -56,8 +144,29 @@
     "region": "Arequipa",
     "guests": 6,
     "rooms": 3,
+    "beds": 5,
+    "bathrooms": 3,
+    "reviews": 183,
     "price": 300,
-    "type": "casa"
+    "type": "casa",
+    "host": "Milagros",
+    "whatsapp": "+51987654321",
+    "description": "Casona colonial de lujo en Arequipa con sala de estar elegante, chimenea, comedor formal y habitaciones amplias con vigas de madera originales. Sus camas king size y ventanales de arco le dan un ambiente señorial único. La terraza con pérgola y vista a los jardines es perfecta para desayunar tranquilo. Ideal para familias o grupos que quieren vivir la experiencia de una casona arequipeña con todas las comodidades modernas.",
+    "amenities": [
+      "Chimenea",
+      "Terraza con pérgola",
+      "Comedor formal",
+      "Wi-Fi",
+      "Cocina equipada",
+      "Estacionamiento"
+    ],
+      "images": [
+        "images/rooms/property-5/room1.png",
+        "images/rooms/property-5/room2.png",
+        "images/rooms/property-5/room3.png",
+        "images/rooms/property-5/room4.png",
+        "images/rooms/property-5/room5.png"
+      ]
   },
   {
     "id": 6,
@@ -68,7 +177,28 @@
     "region": "Cusco",
     "guests": 4,
     "rooms": 2,
+    "beds": 3,
+    "bathrooms": 2,
+    "reviews": 101,
     "price": 270,
-    "type": "cabana"
+    "type": "cabana",
+    "host": "Fermin",
+    "whatsapp": "+51987654321",
+    "description": "Cabaña de madera andina en el Valle Sagrado de los Incas, iluminada de noche como una postal. Sus habitaciones tienen vigas de madera originales, piso de terracota y textiles cusqueños que le dan una calidez única. La sala de estar con vista al jardín y la decoración artesanal hacen de este lugar algo difícil de olvidar. A 20 minutos de Ollantaytambo y a una hora de Machu Picchu. Ideal para quienes buscan una experiencia auténtica en el corazón del Valle Sagrado.",
+    "amenities": [
+      "Textiles andinos",
+      "Vista al valle",
+      "Wi-Fi",
+      "Cocina equipada",
+      "Chimenea",
+      "Estacionamiento"
+    ],
+      "images": [
+        "images/rooms/property-6/room1.png",
+        "images/rooms/property-6/room2.png",
+        "images/rooms/property-6/room3.png",
+        "images/rooms/property-6/room4.png",
+        "images/rooms/property-6/room5.png"
+      ]
   }
 ]

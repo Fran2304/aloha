@@ -1,5 +1,5 @@
 async function loadProperties() {
-  const res = await fetch("data/properties.json");
+  const res = await fetch("../data/properties.json");
   const properties = await res.json();
   return properties;
 }
@@ -31,7 +31,7 @@ function renderProperties(properties) {
         </div>
         <div class="card-footer d-flex justify-content-between align-items-center">
           <span><strong>S/ ${p.price}</strong> / noche</span>
-          <a href="pages/detail.html" class="btn btn-sm btn-outline-primary">Ver más</a>
+        <a href="pages/detail.html?id=${p.id}" class="btn btn-sm btn-outline-primary">Ver más</a>
         </div>
       </article>
     </div>
@@ -43,15 +43,15 @@ async function displayProperties(){
   renderProperties(allProperties);
 }
 
- document.querySelector(".search-bar form").addEventListener("submit", (e) => {                                                                                          
+ document.querySelector(".search-bar form").addEventListener("submit", (e) => {
      e.preventDefault();
      const ubicacion = document.getElementById("ubicacion").value.trim().toLowerCase();
      const precioMax = parseFloat(document.getElementById("precioMax").value);
      const tipo      = document.getElementById("tipoAlojam").value;
-     const huespedes = parseInt(document.getElementById("huespedes").value) || 0;                                                                                          
-  
+     const huespedes = parseInt(document.getElementById("huespedes").value) || 0;
+
      const filtered = allProperties.filter((p) => {
-       const matchLocation = !ubicacion || p.city.toLowerCase().includes(ubicacion) || p.region.toLowerCase().includes(ubicacion);                                         
+       const matchLocation = !ubicacion || p.city.toLowerCase().includes(ubicacion) || p.region.toLowerCase().includes(ubicacion);
        const matchPrice    = !precioMax || p.price <= precioMax;
        const matchType     = !tipo || tipo === 'todos' || p.type === tipo;
        const matchGuests   = !huespedes || p.guests >= huespedes;
