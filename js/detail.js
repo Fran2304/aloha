@@ -66,17 +66,21 @@ async function cargarPropiedad() {
 
 
 
-        const imagenes = p.images && p.images.length > 0 ? p.images : [p.image];
-
-        document.getElementById("det-img-principal").src = `../${imagenes[0]}`;
+        document.getElementById("det-img-principal").src = `../${p.image}`;
 
         document.getElementById("det-img-principal").alt = p.title;
 
-
+        const GALLERY_IMAGES = [
+            'images/rooms/room-1.jpg',
+            'images/rooms/room-2.jpg',
+            'images/rooms/room-3.jpg',
+            'images/rooms/room-4.jpg',
+            'images/rooms/room-5.jpg'
+        ];
 
         const gridSecundario = document.getElementById("det-imgs-secundarias");
 
-        gridSecundario.innerHTML = imagenes.slice(1, 5).map((img) => `
+        gridSecundario.innerHTML = GALLERY_IMAGES.map((img) => `
 
             <div class="col-6">
 
