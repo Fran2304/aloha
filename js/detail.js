@@ -7,9 +7,9 @@ async function cargarPropiedad() {
 
     try {
 
-        const res = await fetch("../data/properties.json");
+        await initStorage();
 
-        const propiedades = await res.json();
+        const propiedades = getProperties();
 
         const p = propiedades.find((prop) => prop.id === id);
 
@@ -37,12 +37,7 @@ async function cargarPropiedad() {
 
         document.title = `${p.title} - Aloha`;
 
-        document.getElementById("det-tipo").textContent =
-
-            p.type.charAt(0).toUpperCase() + p.type.slice(1);
-
-
-
+        document.getElementById("det-tipo").textContent = p.type.charAt(0).toUpperCase() + p.type.slice(1);
 
         if (document.getElementById("det-rating")) {
 
@@ -203,7 +198,9 @@ function calcularPrecio() {
 
 
 
-    document.getElementById("num-noches").textContent = noches;
+    document.getElementById("num-noches").textContent     = noches;
+
+    document.getElementById("precio-resumen").textContent = precio;
 
     document.getElementById("subtotal").textContent   = "S/ " + subtotal;
 

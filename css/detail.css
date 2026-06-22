@@ -58,6 +58,10 @@ h2 {
     margin-bottom: 12px;
 }
 
+#det-tipo {
+    font-weight: 700;
+}
+
 /* ─── BADGE ─── */
 .badge {
     font-size: 12px;
