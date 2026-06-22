@@ -40,26 +40,31 @@
                             <h1 class="text-center">Crear Cuenta</h1>
                             <p class="text-center">Únete a AlohaPe y empieza a gestionar tus alojamientos.</p>
 
-                            <form id="registroForm" action="#">
+                            <form id="registroForm" action="#" novalidate>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="tucorreo@gmail.com" required>
+                                    <input type="email" class="form-control" id="email" placeholder="tucorreo@gmail.com">
+                                    <div class="invalid-feedback">Ingresa un correo válido.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="contrasena" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="contrasena" placeholder="••••••••" required>
+                                    <input type="password" class="form-control" id="contrasena" placeholder="••••••••">
+                                    <div class="invalid-feedback">La contraseña no puede estar vacía.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="nombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Juan Pérez" required>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Juan Pérez">
+                                    <div class="invalid-feedback">El nombre no puede estar vacío.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="dni" class="form-label">DNI</label>
-                                    <input type="number" class="form-control" id="dni" placeholder="12345678" required>
+                                    <input type="number" class="form-control" id="dni" placeholder="12345678">
+                                    <div class="invalid-feedback">El DNI no puede estar vacío.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefono" placeholder="999 999 999" required>
+                                    <input type="tel" class="form-control" id="telefono" placeholder="999 999 999">
+                                    <div class="invalid-feedback">El teléfono no puede estar vacío.</div>
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100">Registrarse</button>
                                 <div id="successMessage" class="alert alert-success text-center mt-3 d-none" role="alert"></div>
@@ -73,14 +78,7 @@
         </div>
     </main>
 
-    <script>
-        document.getElementById('registroForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            var successMessage = document.getElementById('successMessage');
-            successMessage.textContent = '¡Ya eres parte de ALOHAPE!';
-            successMessage.classList.remove('d-none');
-        });
-    </script>
+    <script src="../js/registro.js"></script>
 
     <footer id="contacto">
         <div class="container">
