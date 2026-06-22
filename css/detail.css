@@ -1,3 +1,4 @@
+
 /* ─── VARIABLES DE COLOR ─── */
 :root {
     --color-primario: #222222;
@@ -18,32 +19,28 @@
 }
 
 
-/* ─── BOTÓN VOLVER ─── */
-.btn-volver {
-    background-color: transparent;
-    color: var(--color-gris);
-    border: 1px solid var(--color-borde);
-    border-radius: 30px;
-    padding: 6px 16px;
-    font-size: 14px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    transition: all 0.2s;
-    margin-bottom: 16px;
-}
-
-.btn-volver:hover {
-    color: var(--color-texto);
-    border-color: var(--color-texto);
-}
-
 /* ─── CONTENIDO PRINCIPAL ─── */
 main .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 24px 16px;
+}
+
+/* ─── BREADCRUMB / VOLVER ─── */
+main nav a {
+    color: var(--color-gris);
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 16px;
+    transition: color 0.2s;
+}
+
+main nav a:hover {
+    color: var(--color-texto);
+    text-decoration: underline;
 }
 
 /* ─── TÍTULO Y SUBTÍTULO ─── */
@@ -71,8 +68,6 @@ h2 {
     padding: 5px 10px;
     border-radius: 20px;
     font-weight: 500;
-    background-color: #f5f1f1e3 !important;
-    color: #000000;
 }
 
 /* ─── GALERÍA DE FOTOS ─── */
@@ -141,6 +136,21 @@ section ul li {
 
 .card-body {
     padding: 20px;
+}
+
+.card-body .form-control,
+.card-body .form-select {
+    border-radius: 8px;
+    border: 1px solid var(--color-borde);
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+.card-body .form-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-primario);
+    margin-bottom: 4px;
 }
 
 .card-body .form-control,
