@@ -42,7 +42,7 @@
             </nav>
 
             <div class="d-flex align-items-center gap-3">
-                <span class="badge bg-secondary" id="det-tipo">Departamento</span>
+                <span id="det-tipo"></span>
                 <span><i class="bi bi-star-fill"></i> <span id="det-rating">4.9</span> · <span id="det-reviews">128</span> reseñas</span>
             </div>
 
@@ -76,24 +76,7 @@
 
                     <section>
                         <h2>Lo que incluye</h2>
-                        <div class="row">
-                            <div class="col-6">
-                                <ul class="list-unstyled">
-                                    <li>Wi-Fi de alta velocidad</li>
-                                    <li>Cocina equipada</li>
-                                    <li>Estacionamiento</li>
-                                </ul>
-                            </div>
-
-                            <div class="col-6">
-                                <ul class="list-unstyled">
-                                    <li>Vista al mar</li>
-                                    <li>Aire acondicionado</li>
-                                    <li>Terraza privada</li>
-                                <ul class="list-unstyled row"id="det-amenidades">
-                                </ul>
-                            </div>
-                        </div>
+                        <ul class="list-unstyled row" id="det-amenidades"></ul>
                     </section>
 
                     <section>
@@ -142,7 +125,7 @@
                                 </a>
                                 <div id="resumen-precio" class="resumen-precio d-none mt-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>S/ 320 × <span id="num-noches">0</span> noches</span>
+                                        <span>S/ <span id="precio-resumen"></span> × <span id="num-noches">0</span> noches</span>
                                         <span id="subtotal">S/ 0</span>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -197,6 +180,7 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/storage.js"></script>
 <script src="../js/detail.js"></script>
 
 </body>
