@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "cliente": "Julio Martínez",
+        "userId": 1,
+        "fechaEntrada": "2024-07-01",
+        "fechaSalida": "2024-07-05",
+        "personas": 4,
+        "propiedadId": 1,
+        "observaciones": "Nos gustaría tener una cuna para nuestro bebé."
+    },
+    {
+        "id": 2,
+        "cliente": "Ana Quispe",
+        "userId": 2,
+        "fechaEntrada": "2024-08-10",
+        "fechaSalida": "2024-08-15",
+        "personas": 2,
+        "propiedadId": 2,
+        "observaciones": ""
+    },
+    {
+        "id": 3,
+        "cliente": "Rosa Gómez",
+        "userId": 3,
+        "fechaEntrada": "2024-09-05",
+        "fechaSalida": "2024-09-10",
+        "personas": 3,
+        "propiedadId": 3,
+        "observaciones": "Preferimos una habitación con vista a la selva."
+    },
+    {
+        "id": 4,
+        "cliente": "Felipe Sánchez",
+        "userId": 4,
+        "fechaEntrada": "2024-10-12",
+        "fechaSalida": "2024-10-18",
+        "personas": 5,
+        "propiedadId": 4,
+        "observaciones": ""
+    }
+]

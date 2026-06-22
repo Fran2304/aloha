@@ -1,10 +1,8 @@
-async function loadUsers() {
-  const res = await fetch("../data/users.json");
-  const users = await res.json();
-  return users;
+function findUser(user, email, contrasena) {
+     return user.email === email.value.trim() && user.contrasena === contrasena.value;
 }
 
-document.getElementById("loginForm").addEventListener("submit", async function (e) {
+document.getElementById("loginForm").addEventListener("submit", async e => {
     e.preventDefault();
     const email = document.getElementById("email");
     const contrasena = document.getElementById("contrasena");
@@ -29,12 +27,14 @@ document.getElementById("loginForm").addEventListener("submit", async function (
 
     if (!valid) return;
 
-    const users = await loadUsers();
-    const user = users.find(
-        (u) => u.email === email.value.trim() && u.contrasena === contrasena.value
-    );
+    // Preload users from storage
+    await initStorage();
+
+    const users = getUsers();
+    const user = users.find(u => findUser(u, email, contrasena));
 
     if (user) {
+        setSession({ id: user.id, nombre: user.nombre, email: user.email, telefono: user.telefono });
         window.location.href = "mis-reservas.html";
     } else {
         errorMsg.classList.remove("d-none");
