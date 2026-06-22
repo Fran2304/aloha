@@ -1,12 +1,7 @@
-// 1. Leer el id de la URL → detail.html?id=2 → id = 2
-
 const params = new URLSearchParams(window.location.search);
 
 const id = parseInt(params.get("id"));
 
-
-
-// 2. Cargar el JSON y buscar la propiedad con ese id
 
 async function cargarPropiedad() {
 
@@ -20,7 +15,6 @@ async function cargarPropiedad() {
 
 
 
-        // Si no existe el id, mostrar error
 
         if (!p) {
 
@@ -40,13 +34,8 @@ async function cargarPropiedad() {
 
 
 
-        // 3. Rellenar el título de la pestaña del navegador
 
         document.title = `${p.title} - Aloha`;
-
-
-
-        // 4. Badge de tipo
 
         document.getElementById("det-tipo").textContent =
 
@@ -54,7 +43,6 @@ async function cargarPropiedad() {
 
 
 
-     // 5. Rating y número de reseñas dinámicos
 
         if (document.getElementById("det-rating")) {
 
@@ -70,7 +58,6 @@ async function cargarPropiedad() {
 
 
 
-        // 6. Título y ciudad
 
         document.getElementById("det-titulo").textContent = p.title;
 
@@ -78,7 +65,6 @@ async function cargarPropiedad() {
 
 
 
-        // 7. Galería de fotos
 
         const imagenes = p.images && p.images.length > 0 ? p.images : [p.image];
 
@@ -110,7 +96,6 @@ async function cargarPropiedad() {
 
 
 
-        // 9. Descripción y anfitrión
 
         document.getElementById("det-descripcion").textContent = p.description;
 
@@ -118,7 +103,6 @@ async function cargarPropiedad() {
 
 
 
-        // 10. Amenidades (lo que incluye)
 
         document.getElementById("det-amenidades").innerHTML = p.amenities
 
@@ -128,21 +112,11 @@ async function cargarPropiedad() {
 
 
 
-        // 11. Card de reserva — precio y WhatsApp
 
         document.getElementById("det-precio").textContent = `S/ ${p.price}`;
 
 
 
-        // ==========================================
-
-        //  ¡CORRECCIÓN AQUÍ! Mover las líneas adentro
-
-        // ==========================================
-
-
-
-        // Camas y baños
 
         if(document.getElementById("det-camas")) document.getElementById("det-camas").textContent = `${p.beds} camas`;
 
@@ -150,13 +124,11 @@ async function cargarPropiedad() {
 
 
 
-        // Ubicación dinámica
 
         if(document.getElementById("det-ubicacion")) document.getElementById("det-ubicacion").textContent = `${p.city}, ${p.region}`;
 
 
 
-        // Mapa dinámico (Corregida la URL para que incruste bien Google Maps con el nombre de la ciudad)
 
         if(document.getElementById("det-mapa")) {
 
@@ -176,7 +148,6 @@ async function cargarPropiedad() {
 
 
 
-// 12. Cálculo de precio total según fechas
 
 const TARIFA_SERVICIO = 0.12;
 
@@ -250,7 +221,6 @@ document.getElementById("fecha-salida").addEventListener("change", calcularPreci
 
 
 
-// Iniciar la carga
 
 cargarPropiedad();
 
