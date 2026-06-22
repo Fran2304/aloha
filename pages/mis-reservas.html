@@ -23,8 +23,9 @@
                     <li class="nav-item"><a class="nav-link" href="../index.html#contacto">Contacto</a></li>
                 </ul>
                 <div class="d-flex align-items-center gap-2">
-                    <a href="inicio-sesion.html" class="btn"><i class="bi bi-person"></i> Ingresar</a>
-                    <a href="registro.html" class="btn btn-primary">Registro</a>
+                    <button id="btn-logout" class="btn btn-outline-danger btn-sm">
+                        <i class="bi bi-box-arrow-right"></i> Salir
+                    </button>
                 </div>
             </div>
         </nav>
@@ -39,148 +40,40 @@
                     <dl>
                         <div>
                             <dt>Nombre:</dt>
-                            <dd>Nombre del Anfitrión</dd>
+                            <dd id="perfil-nombre">—</dd>
                         </div>
                         <div>
                             <dt>Teléfono:</dt>
-                            <dd>999 999 999</dd>
+                            <dd id="perfil-telefono">—</dd>
                         </div>
                         <div>
                             <dt>Email:</dt>
-                            <dd>anfitrion@gmail.com</dd>
+                            <dd id="perfil-email">—</dd>
                         </div>
                     </dl>
                 </div>
             </section>
 
-            <section aria-labelledby="mis-propiedades-titulo">
-                <div class="d-flex justify-content-between align-items-center">
+            <section aria-labelledby="mis-propiedades-titulo" class="mt-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
                     <h2 id="mis-propiedades-titulo">Mis Propiedades</h2>
-        
+                    <button type="button" class="btn btn-primary btn-sm"
+                            data-bs-toggle="modal" data-bs-target="#modalPropiedad">
+                        <i class="bi bi-plus"></i> Agregar propiedad
+                    </button>
                 </div>
-
-                <div class="row g-4">
-                    <div class="col-12 col-md-6">
-                        <article class="card">
-                            <div class="d-flex gap-3 p-3">
-                                <img src="../images/property-1.png" alt="Propiedad 1" style="width: 160px; height: 120px; object-fit: cover;">
-                                <div class="flex-grow-1">
-                                    <p><strong>Nombre completo:</strong> Juan Pérez</p>
-                                    <p><strong>Ubicación:</strong> Av El sol 481, Lima</p>
-                                    <div class="d-flex gap-2 mt-3">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">
-                                            <i class="bi bi-pencil"></i> Editar
-                                        </button>
-                                        <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash"></i> Eliminar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <article class="card">
-                            <div class="d-flex gap-3 p-3">
-                                <img src="../images/property-2.jpg" alt="Propiedad 2" style="width: 160px; height: 120px; object-fit: cover;">
-                                <div class="flex-grow-1">
-                                    <p><strong>Nombre completo:</strong> Juan Pérez</p>
-                                    <p><strong>Ubicación:</strong> Av La luna 1011, Lima</p>
-                                    <div class="d-flex gap-2 mt-3">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">
-                                            <i class="bi bi-pencil"></i> Editar
-                                        </button>
-                                        <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash"></i> Eliminar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <div class="row g-4" id="mis-propiedades-grid"></div>
             </section>
 
-            <section aria-labelledby="reservas-actuales-titulo">
-                
-                <div class="d-flex justify-content-between align-items-center">
+            <section aria-labelledby="reservas-actuales-titulo" class="mt-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
                     <h2 id="reservas-actuales-titulo">Reservas Actuales</h2>
-                    <button type="button" class="btn btn-outline-primary">
+                    <button id="btn-agregar-reserva" type="button" class="btn btn-primary btn-sm"
+                            data-bs-toggle="modal" data-bs-target="#modalReserva">
                         <i class="bi bi-plus"></i> Agregar reserva
                     </button>
                 </div>
-                <div class="row g-4">
-                    <div class="col-12 col-md-6">
-                        <article class="card p-3">
-                            <dl>
-                                <div>
-                                    <dt>Fecha llegada:</dt>
-                                    <dd>15/07/2024</dd>
-                                </div>
-                                <div>
-                                    <dt>Nombre completo:</dt>
-                                    <dd>Juan Pérez</dd>
-                                </div>
-                                <div>
-                                    <dt>Fecha salida:</dt>
-                                    <dd>20/07/2024</dd>
-                                </div>
-                                <div>
-                                    <dt>Número de huéspedes:</dt>
-                                    <dd>2 adultos, 1 niño</dd>
-                                </div>
-                                <div>
-                                    <dt>Observaciones:</dt>
-                                    <dd>Solicita cuna para bebé.</dd>
-                                </div>
-                            </dl>
-                            <div class="d-flex justify-content-end gap-2">
-                                <button type="button" class="btn btn-outline-secondary btn-sm">
-                                    <i class="bi bi-pencil"></i> Editar
-                                </button>
-                                <button type="button" class="btn btn-outline-danger btn-sm">
-                                    <i class="bi bi-trash"></i> Eliminar
-                                </button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <article class="card p-3">
-                            <dl>
-                                <div>
-                                    <dt>Fecha llegada:</dt>
-                                    <dd>01/08/2024</dd>
-                                </div>
-                                <div>
-                                    <dt>Nombre completo:</dt>
-                                    <dd>María García</dd>
-                                </div>
-                                <div>
-                                    <dt>Fecha salida:</dt>
-                                    <dd>07/08/2024</dd>
-                                </div>
-                                <div>
-                                    <dt>Número de huéspedes:</dt>
-                                    <dd>3 adultos</dd>
-                                </div>
-                                <div>
-                                    <dt>Observaciones:</dt>
-                                    <dd>Check-in tarde.</dd>
-                                </div>
-                            </dl>
-                            <div class="d-flex justify-content-end gap-2">
-                                <button type="button" class="btn btn-outline-secondary btn-sm">
-                                    <i class="bi bi-pencil"></i> Editar
-                                </button>
-                                <button type="button" class="btn btn-outline-danger btn-sm">
-                                    <i class="bi bi-trash"></i> Eliminar
-                                </button>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <div class="row g-4" id="mis-reservas-grid"></div>
             </section>
 
         </div>
@@ -216,5 +109,115 @@
         </div>
     </footer>
 
+    <!-- Modal: Agregar Propiedad -->
+    <div class="modal fade" id="modalPropiedad" tabindex="-1" aria-labelledby="modalPropiedadLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPropiedadLabel">Agregar Propiedad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formPropiedad" novalidate>
+                        <div class="mb-3">
+                            <label for="prop-title" class="form-label">Título</label>
+                            <input type="text" class="form-control" id="prop-title" required placeholder="Ej: Casa frente al mar en Máncora">
+                            <div class="invalid-feedback">El título no puede estar vacío.</div>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col">
+                                <label for="prop-city" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="prop-city" required placeholder="Lima">
+                                <div class="invalid-feedback">Ingresa la ciudad.</div>
+                            </div>
+                            <div class="col">
+                                <label for="prop-region" class="form-label">Región</label>
+                                <input type="text" class="form-control" id="prop-region" required placeholder="Lima">
+                                <div class="invalid-feedback">Ingresa la región.</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="prop-type" class="form-label">Tipo</label>
+                            <select class="form-select" id="prop-type" required>
+                                <option value="casa">Casa</option>
+                                <option value="cabana">Cabaña</option>
+                                <option value="departamento">Departamento</option>
+                            </select>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col">
+                                <label for="prop-price" class="form-label">Precio / noche (S/)</label>
+                                <input type="number" class="form-control" id="prop-price" required min="1" placeholder="250">
+                                <div class="invalid-feedback">Ingresa un precio mayor a 0.</div>
+                            </div>
+                            <div class="col">
+                                <label for="prop-guests" class="form-label">Huéspedes máx.</label>
+                                <input type="number" class="form-control" id="prop-guests" required min="1" placeholder="4">
+                                <div class="invalid-feedback">Ingresa al menos 1.</div>
+                            </div>
+                            <div class="col">
+                                <label for="prop-rooms" class="form-label">Habitaciones</label>
+                                <input type="number" class="form-control" id="prop-rooms" required min="1" placeholder="2">
+                                <div class="invalid-feedback">Ingresa al menos 1.</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="prop-description" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="prop-description" rows="3" required placeholder="Describe tu propiedad..."></textarea>
+                            <div class="invalid-feedback">La descripción no puede estar vacía.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Guardar propiedad</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Agregar Reserva -->
+    <div class="modal fade" id="modalReserva" tabindex="-1" aria-labelledby="modalReservaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalReservaLabel">Agregar Reserva</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formReserva" novalidate>
+                        <div class="mb-3">
+                            <label for="reserva-propiedadId" class="form-label">Propiedad</label>
+                            <select class="form-select" id="reserva-propiedadId" required></select>
+                            <div class="invalid-feedback">Selecciona una propiedad.</div>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col">
+                                <label for="reserva-fechaEntrada" class="form-label">Fecha entrada</label>
+                                <input type="date" class="form-control" id="reserva-fechaEntrada" required>
+                                <div class="invalid-feedback">Selecciona la fecha de entrada.</div>
+                            </div>
+                            <div class="col">
+                                <label for="reserva-fechaSalida" class="form-label">Fecha salida</label>
+                                <input type="date" class="form-control" id="reserva-fechaSalida" required>
+                                <div class="invalid-feedback">La fecha de salida debe ser posterior a la entrada.</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reserva-personas" class="form-label">Número de huéspedes</label>
+                            <input type="number" class="form-control" id="reserva-personas" required min="1" placeholder="2">
+                            <div class="invalid-feedback">Ingresa al menos 1 huésped.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reserva-observaciones" class="form-label">Observaciones <span class="text-muted">(opcional)</span></label>
+                            <textarea class="form-control" id="reserva-observaciones" rows="2" placeholder="Ej: Llegamos tarde, necesitamos cuna..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Guardar reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/mis-reservas.js"></script>
 </body>
 </html>
